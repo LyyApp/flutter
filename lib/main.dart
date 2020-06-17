@@ -20,6 +20,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
    FlutterBoost.singleton.registerPageBuilders({
+     'welcome': (pageName, params, _) => WelcomeController(),
      'front': (pageName, params, _) => FrontPageController(),
      'login': (pageName, params, _) => LoginController(),
 
@@ -42,7 +43,7 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.blue,
       ),
       builder: FlutterBoost.init(postPush:_onRoutePushed),
-      home: Container(color:Colors.white),
+      home:Container(color:Colors.white),
     );
   }
   void _onRoutePushed(
