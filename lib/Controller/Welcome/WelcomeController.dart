@@ -29,7 +29,8 @@ class _WelcomeControllerState extends State<WelcomeController> {
           Align(
               alignment: Alignment.center,
               child: Image.asset(
-                'images/StartTitle.png',)
+                'images/StartTitle.png',
+                )
           ),
           Align(
             alignment: Alignment.bottomCenter,
